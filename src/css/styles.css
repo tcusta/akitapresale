@@ -1,0 +1,244 @@
+body {
+  font-size:15px;
+  width: 100vw;
+  color: white;
+  overflow-x: hidden;
+  background-size: cover;
+  background-color: #000;
+}
+header .navbar {
+  padding: 20px 0;
+}
+.logo {
+  width: 80px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #E63F41;
+  padding: 0;
+  margin: 0;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+label{
+  color: black;
+}
+p {
+  margin: 0;
+}
+.btn {
+  font-size: 21px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  background-color: #E63F41 !important;
+  padding: 10px 30px;
+  border-radius: 30px 30px 30px 30px;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+button:disabled {
+  opacity: 0.9;
+  cursor: not-allowed;
+}
+.card {
+  width: 400px;
+  margin: 25px 50px;
+  padding: 25px;
+  max-width: 400px;
+  border-radius: 20px;
+  background: transparent;
+  border-right: 1px solid rgba(0, 0, 0, 0.12) !important;
+  box-shadow: rgb(99 99 99 / 70%) 0px 0px 23px 9px !important;
+}
+.card.white {
+  background: white;
+}
+.card.timer {
+  max-width: 100%;
+  margin: 0 auto 30px;
+  width: 100% !important;
+}
+.box {
+  font-size: 18px;
+  font-weight: 700;
+  padding: 40px 15px;
+  text-align: center;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  background-color: #E63F41;
+  box-shadow: rgb(99 99 99 / 70%) 0px 3px 5px 0px !important;
+}
+.box p {
+  font-weight: 400;
+  margin-top: 10px;
+}
+.card .btn-primary {
+  padding: 10px 46px;
+  margin: auto;
+  display: block;
+  border: none !important;
+}
+.min {
+  color: #040b45;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
+}
+input.form-control, select.form-control {
+  font-size: 20px;
+  letter-spacing: 2px;
+  color: #040b45;
+  width: 100%;
+  height: 50px;
+  padding: 12px;
+  text-align: center;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 2px solid lightblue;
+  box-shadow: rgb(99 99 99 / 20%) 0px 0px 8px 2px !important;
+}
+.progress {
+  height: 2rem;
+  font-size: 0.75rem;
+  background-color: #e9ecef;
+  border-radius: 1.25rem;
+}
+.bg-success {
+  font-size: 14px;
+  font-weight: 700;
+  color: #040b45;
+  background-color: #E63F41 !important;
+}
+.toasted-container .toasted {
+  border-radius: 10px !important;
+  padding: 15px 31px !important;
+  font-size: 17px !important;
+  color: white !important;
+  border-color: #E63F41 !important;
+  background-color: #E63F41 !important;
+}
+@media (max-width: 768px) {
+  h1,
+  h2 {
+    margin-bottom: 40px;
+  }
+  .card {
+    margin: auto;
+    width: 80%;
+    min-width: 80%;
+    margin-bottom: 30px;
+  }
+}
+#Days,
+#Hours,
+#Minutes,
+#Seconds {
+  float: left;
+}
+.time-content {
+  width: 100%;
+}
+.time-content p {
+  font-size: 40px;
+  margin: 5px;
+  text-align: center;
+  font-family: "Chewy";
+}
+.time-content small {
+  font-size: 20px;
+  font-weight: 800;
+  margin: 5px;
+  text-align: center;
+  font-family: "Chewy";
+  display: inline-block;
+  width: 80px;
+  text-align: center;
+}
+#dateEnd,
+#action {
+  display: block;
+  margin: 0 auto;
+}
+
+.box-time {
+  margin: 0 5px;
+  padding: 10px;
+  position: relative;
+  width: 80px;
+  height: 86px;
+  font-size: 60px;
+  line-height: 65px;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: #555555;
+  background: rgb(235, 235, 235); /* Old browsers */
+}
+.box-time:before {
+  content: "";
+  background: darkgrey;
+  position: absolute;
+  z-index: 10;
+  top: 43px;
+  left: 0;
+  width: 80px;
+  height: 3px;
+  border-bottom: 1px solid #fff;
+}
+.timerr span {
+  display: grid;
+  justify-content: center;
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+@media (max-width: 576px) {
+  body {
+    padding: 20px;
+  }
+  .navbar .container {
+    justify-content: space-between;
+  }
+  header .navbar {
+    padding: 10px 0 30px;
+  }
+
+  h1,
+  h2 {
+    font-size: 30px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  .btn {
+    font-size: 17px;
+    letter-spacing: 0;
+  }
+  .card {
+    margin: 0;
+    width: 100%;
+    min-width: 100%;
+    padding: 30px 20px;
+    margin-bottom: 30px;
+  }
+  .card.timer {
+    padding: 30px 0;
+  }
+  .box-time {
+    width: 60px;
+  }
+  .box-time:before {
+    width: 60px;
+  }
+  .time-content small {
+    font-size: 15px;
+    margin: 5px;
+    text-align: center;
+    font-family: "Chewy";
+    display: inline-block;
+    width: 60px;
+    text-align: center;
+  }
+}
